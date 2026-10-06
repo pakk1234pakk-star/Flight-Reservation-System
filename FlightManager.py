@@ -69,8 +69,8 @@ def login_ssh_tunnel()->None:
         exit()
 
 def login_db()->None:
-    username = "f4238422" 
-    password = "f4238422"
+        username = input("Enter DB username: ").strip()
+        password = pwinput.pwinput(prompt="Enter DB password: ")
 
     global connection, cursor
 
