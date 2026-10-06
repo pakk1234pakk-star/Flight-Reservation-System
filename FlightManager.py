@@ -69,11 +69,10 @@ def login_ssh_tunnel()->None:
         exit()
 
 def login_db()->None:
-        username = input("Enter DB username: ").strip()
-        password = pwinput.pwinput(prompt="Enter DB password: ")
+    username = input("Enter DB username: ").strip()
+    password = pwinput.pwinput(prompt="Enter DB password: ")
 
     global connection, cursor
-
     dsn = f"{db_info.ora_host}:{db_info.ora_port}/{db_info.srv_name}"
 
     try:
